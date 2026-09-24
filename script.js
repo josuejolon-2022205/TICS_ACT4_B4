@@ -37,7 +37,7 @@ function renderProducts(products) {
 
   setStatus(`Mostrando ${products.length} producto(s).`);
 
-  var fragment = document.createDocumentFragment();
+  const fragment = document.createDocumentFragment();
   products.forEach((product) => {
     fragment.appendChild(createProductCard(product));
   });
