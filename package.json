@@ -1,0 +1,19 @@
+{
+  "name": "mini-app-husky",
+  "version": "1.0.0",
+  "description": "Mini app que consume una API pública, con Husky + ESLint en pre-commit",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "eslint": "^9.9.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.9"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  }
+}
