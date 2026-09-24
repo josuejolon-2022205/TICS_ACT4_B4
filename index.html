@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini App - Catálogo de Productos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>Catálogo de Productos</h1>
+    <p class="subtitle">Datos obtenidos desde la Fake Store API</p>
+  </header>
+
+  <main class="app-main">
+    <section class="controls">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Buscar producto..."
+        aria-label="Buscar producto"
+      />
+      <select id="category-filter" aria-label="Filtrar por categoría">
+        <option value="all">Todas las categorías</option>
+      </select>
+    </section>
+
+    <p id="status-message" class="status-message"></p>
+
+    <section id="product-list" class="product-list"></section>
+  </main>
+
+  <footer class="app-footer">
+    <p>Proyecto de práctica &mdash; fetch API + Husky + ESLint</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
